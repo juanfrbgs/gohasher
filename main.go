@@ -20,7 +20,7 @@ func main() {
     showOptions()
 
     var option int
-    fmt.Print("Elige una opción: ")
+    fmt.Print("Choose an option: ")
     fmt.Scanf("%d", &option)
     fmt.Println("")
 
@@ -36,7 +36,7 @@ func main() {
     case 5:
         calculateAllHashes(filename)
     default:
-        fmt.Println("Opción inválida. Por favor, elige entre 1 y 5.")
+        fmt.Println("Invalid option. Please choose between 1 and 5.")
     }
 }
 
@@ -53,25 +53,25 @@ func showBanner() {
 
 func getFilePath() string {
     var filename string
-    fmt.Print("Ingresa la ruta del archivo: ")
+    fmt.Print("Enter the file path: ")
     fmt.Scan(&filename)
     return filename
 }
 
 func validateFile(filename string) {
     if _, err := os.Stat(filename); os.IsNotExist(err) {
-        log.Fatalf("El archivo no existe: %s\n", filename)
+        log.Fatalf("The file does not exist: %s\n", filename)
     }
 }
 
 func showOptions() {
-    fmt.Println("\n== Menú de Opciones ==")
+    fmt.Println("\n== Options Menu ==")
     fmt.Println("=======================")
     fmt.Println("1 -> MD5")
     fmt.Println("2 -> SHA1")
     fmt.Println("3 -> SHA256")
     fmt.Println("4 -> SHA512")
-    fmt.Println("5 -> Todos")
+    fmt.Println("5 -> All")
     fmt.Println("=======================\n")
 }
 
@@ -109,7 +109,7 @@ func calculateAllHashes(filename string) {
         log.Fatal(err)
     }
 
-    fmt.Printf("Archivo: %s\n\n", filepath.Base(filename))
+    fmt.Printf("File: %s\n\n", filepath.Base(filename))
     fmt.Printf("MD5    -> %x\n", md5Hash.Sum(nil))
     fmt.Printf("SHA1   -> %x\n", sha1Hash.Sum(nil))
     fmt.Printf("SHA256 -> %x\n", sha256Hash.Sum(nil))

@@ -31,24 +31,24 @@ go run main.go
 | |_| | (_) |  _  | (_| \__ \ | | |  __/ |   
  \____|\___/|_| |_|\__,_|___/_| |_|\___|_|   
 
+Enter the file path: README.md
 
-Enter file path: test.txt
+== Options Menu ==
+=======================
+1 -> MD5
+2 -> SHA1
+3 -> SHA256
+4 -> SHA512
+5 -> All
+=======================
 
-==Options Menu==
-==================
-md5 -> 1
-sha1 -> 2
-sha256 -> 3
-sha512 -> 4
-all -> 5
-==================
+Choose an option: 5
 
-Choose an Option: 5
+File: README.md
 
-file: test.txt
-
-md5 -> b05403212c66bdc8ccc597fedf6cd5fe
-sha1 -> da39a3ee5e6b4b0d3255bfef95601890afd80709
-sha256 -> e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-sha512 -> cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
+MD5    -> cf36775472ffd0c37ae0b1428fbdf98e
+SHA1   -> d372c68657ffdc9fb355b42f7ff78a7f37dd9f4d
+SHA256 -> b8dc0498d39963e4545509b52195b75223ae6810d0d4d8bf48d800d971129ddd
+SHA512 -> 5b7444cf0ab11810df64ce4182f4629936567c1908176b8843a8f1b399376471b398dd5f9a8f6e1c3b5404a8096135370e1cf1a9109310e999905ca84ce474c7
 ```
+
